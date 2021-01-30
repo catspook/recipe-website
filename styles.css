@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Spectral");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+    margin: 0;
+    text-align: left;
+    font-family: 'Montserrat';
+}
+nav {
+    height: 25vh;
+    background-image: url("images/patryk-gauza-vs0tzSHVcac-unsplash.jpg");
+    background-size: 50%;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border1 {
+   background-color: #00856a; 
+}
+h1 {
+    font-family: 'Spectral';
+    background-color: #00856a;
+    border: 5px solid #4d2600;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+.main {
+    display: flex;
+    flex-direction: column wrap;
+    border: 1px solid white;
+}
+h2 {
+    color: #00856a;
+    font-family: 'Spectral';
+    text-align: center;
+    font-size: 30px;
+}
+/* ---------------------------- */
+.left, .right {
+    width: 20%;
+    padding: 5px;
+    background-color: #e6fffa;
+}
+.left h2 {
+    color: #4d2600;
+}
+.left ul li a {
+    text-decoration: none;
+    color: black;
+}
+.right {
+    text-align: center;
+}
+.right p {
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+}
+.shlink {
+    color: #4d2600;
+}
+/* ---------------------------- */
+.middle {
+    width: 60%;
+    font-size: 20px;
+    padding: 50px;
+}
+.note {
+    color: #4d2600;
+    font-size: 15px;
+}
+.note-link {
+    color: #4d2600;
+}
+.center {
+    text-align: center;
+}
+/* ---------------------------- */
+.footer {
+    background-image: url("images/patryk-gauza-vs0tzSHVcac-unsplash.jpg");
+    background-size: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #4d2600;
+    height: 45px;
+}
+.footer-text {
+    font-size: 15px;
+    font-family: 'Spectral';
+    margin: 5px;
+    background-color: rgba(77, 38, 0, 0.6); /* #4d2600 */
+}
+.pic-link {
+    color: white;
+}
+.pic-link:hover, .pic-link:active, .pic-link:focus {
+    color: #4dffdb;
+}
+@media (min-width: 701px) {
+    h1 {
+        font-size: 60px;
+        margin: 5px;
+    }
+}
+@media (min-width: 415px) and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        margin: 3px;
+    }
+}
+@media (max-width: 415px) {
+    h1 {
+        font-size: 30px;
+        margin: 3px;
+    }
+    .footer {
+        height: 90px;
+    }
+}
