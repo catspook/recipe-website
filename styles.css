@@ -23,10 +23,11 @@ h1 {
     border: 5px solid #4d2600;
     padding: 5px 10px 5px 10px;
     color: white;
+    font-size: 60px;
+    margin: 5px;
 }
 .main {
     display: flex;
-    flex-direction: column wrap;
     border: 1px solid white;
 }
 h2 {
@@ -45,8 +46,10 @@ h2 {
     color: #4d2600;
 }
 .left ul li a {
-    text-decoration: none;
     color: black;
+}
+.left ul li a:hover, .left ul li a:active, .left ul li a:focus {
+    color: #4d2600;
 }
 .right {
     text-align: center;
@@ -100,16 +103,21 @@ h2 {
 .pic-link:hover, .pic-link:active, .pic-link:focus {
     color: #4dffdb;
 }
-@media (min-width: 701px) {
-    h1 {
-        font-size: 60px;
-        margin: 5px;
-    }
-}
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 416px) and (max-width: 768px) {
     h1 {
         font-size: 40px;
         margin: 3px;
+    }
+    .main {
+        display: inline !important;
+    }
+    .left, .right, .middle {
+        width: 95%;
+        padding: 20px;
+        margin-top: -20px;
+    }
+    .footer {
+        margin-top: -20px;
     }
 }
 @media (max-width: 415px) {
@@ -117,7 +125,16 @@ h2 {
         font-size: 30px;
         margin: 3px;
     }
+    .main {
+        display: inline !important;
+    }
+    .left, .right, .middle {
+        width: 89%;
+        padding: 20px;
+        margin-top: -20px;
+    }
     .footer {
         height: 90px;
+        margin-top: -20px;
     }
 }
